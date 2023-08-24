@@ -1,0 +1,65 @@
+
+body {
+    background-color: rgb(230, 236, 247);
+}
+
+#Encabezado {
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(31, 71, 97);
+}
+
+#Logo {
+    height: 180px;
+    width: 180px;
+}
+
+#ProductosView{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; /* Espacio entre los productos */
+    justify-items: center;
+    grid-auto-flow: dense; /* Cambio de orden para llenar los espacios */
+}
+
+.Producto {
+    margin: 25px;
+    background-color: rgb(255, 255, 255);
+}
+
+.Producto img {
+    max-width: 100%; /* Hace que la imagen se ajuste al ancho del contenedor */
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#Nombre, #Costo {
+    text-align: center;
+}
+
+#Costo {
+    margin: 5px;
+}
+
+.Menu{
+    display: flex;
+    align-items:center;
+    padding-right: 20px;
+    gap: 5px;
+}
+
+.Boton {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+
